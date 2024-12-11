@@ -1,25 +1,43 @@
-# Web-interactiva-Bodega M.A
-# Bodega M.A. - Sitio Web Interactivo
+# 🌟 Bodega M.A. - Sitio Web Interactivo 🌟
 
-Este proyecto es un sitio web interactivo diseñado para la **Bodega M.A.**, que permite a los usuarios conocer la variedad de productos que ofrece, acceder a información de contacto y disfrutar de una experiencia visual atractiva y funcional tanto en computadoras como en dispositivos móviles.
+¡Bienvenido al sitio web oficial de **Bodega M.A.**! 🎉 Este proyecto está diseñado para ofrecer a nuestros clientes una experiencia interactiva y visualmente atractiva, destacando nuestra variedad de productos y servicios. 🚀
 
-## 🛠️ Funcionalidades
+---
 
-1. **Sección "Qué Ofrecemos":**
-   - Carrusel interactivo con imágenes de productos.
-   - Descripción detallada de los productos y servicios ofrecidos.
-   - Botones de navegación para moverse entre las imágenes.
+## 🎯 **Características Principales**
 
-2. **Diseño Responsivo:**
-   - Totalmente adaptado para dispositivos móviles, tabletas y computadoras.
-   - El menú de navegación cambia dinámicamente entre versiones móvil y escritorio.
+- **🛒 Sección "Qué Ofrecemos":**
+  - Carrusel interactivo con imágenes de productos esenciales.
+  - Descripciones claras de nuestros servicios y productos.
 
-3. **Interactividad:**
-   - Menú móvil con un diseño moderno que se abre y cierra mediante botones interactivos.
+- **📍 Google Maps integrado:**
+  - Encuentra fácilmente nuestra ubicación con un mapa interactivo en tiempo real.
 
-4. **Elementos visuales atractivos:**
-   - Fondo con efecto de transición.
-   - Botones y texto con animaciones suaves y modernas.
+- **💬 Acceso directo a WhatsApp:**
+  - Comunícate con nosotros rápidamente a través de un botón de contacto directo con `wa.me`.
+
+- **🎨 Fondos dinámicos con transiciones:**
+  - Fondos que cambian automáticamente con suaves transiciones, haciendo el sitio visualmente atractivo.
+
+- **📱 Diseño Responsivo:**
+  - Una experiencia optimizada para cualquier dispositivo: móvil, tableta o computadora.
+
+- **🖱️ Interactividad y Animaciones:**
+  - Menú móvil moderno que se abre y cierra dinámicamente.
+  - Botones y elementos animados que mejoran la experiencia del usuario.
+
+---
+
+## 📂 **Estructura del Proyecto**
+
+```plaintext
+.
+├── index.html       # Estructura principal del sitio web
+├── styles.css       # Estilos personalizados del sitio web
+├── script.js        # Funcionalidad e interactividad
+├── images/          # Carpeta de imágenes usadas en el proyecto
+└── README.md        # Documentación del proyecto
+
   
 ## 🚀 Tecnologías utilizadas
 
