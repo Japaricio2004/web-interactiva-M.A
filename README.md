@@ -26,15 +26,15 @@ Este proyecto busca ser una herramienta que no solo represente visualmente a la 
 
 ---
 
-## 🛠️ **Tecnologías Implementadas**
+## 🛠️ Tecnologías Implementadas
 
-- **HTML5:** Estructura semántica y escalable.
-- **CSS3:** Estilos avanzados para un diseño visual moderno.
-- **Tailwind CSS:** Framework para implementar estilos con rapidez y eficiencia.
-- **JavaScript:** Funcionalidades dinámicas como carruseles, menús y transiciones.
-- **Font Awesome:** Iconos para mejorar la interfaz de usuario.
-- **Google Maps API:** Muestra la ubicación de la bodega en tiempo real.
-- **wa.me:** Comunicación instantánea a través de WhatsApp.
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
+![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)
+![Google Maps API](https://img.shields.io/badge/Google%20Maps%20API-4285F4?style=for-the-badge&logo=googlemaps&logoColor=white)
+![WhatsApp API](https://img.shields.io/badge/WhatsApp-25D366?style=for-the-badge&logo=whatsapp&logoColor=white)
+
 
 ---
 
