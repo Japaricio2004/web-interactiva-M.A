@@ -37,6 +37,11 @@ Este proyecto busca ser una herramienta que no solo represente visualmente a la 
 
 
 ---
+## 📱 Vista en Dispositivos Móviles
+
+A continuación, puedes observar cómo luce la aplicación en un dispositivo móvil:
+
+![Vista móvil](assets/images/celular-preview.png)
 
 ## 📂 **Estructura del Proyecto**
 
