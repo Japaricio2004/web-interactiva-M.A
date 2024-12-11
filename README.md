@@ -21,12 +21,6 @@ Este proyecto es un sitio web interactivo diseñado para la **Bodega M.A.**, que
    - Fondo con efecto de transición.
    - Botones y texto con animaciones suaves y modernas.
   
-🚀 Tecnologías utilizadas
-HTML5: Estructura del sitio web.
-CSS3: Diseño responsivo y efectos visuales.
-Tailwind CSS: Framework de diseño para crear estilos modernos y eficientes.
-JavaScript: Interactividad en el carrusel, menú y botones.
-Font Awesome: Iconos modernos para mejorar la interfaz.
 
 ## 📂 Estructura del proyecto
 
