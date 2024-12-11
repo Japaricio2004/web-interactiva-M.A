@@ -37,11 +37,12 @@ Este proyecto busca ser una herramienta que no solo represente visualmente a la 
 
 
 ---
-## 📱 Vista en Dispositivos Móviles
+## 📱 Vista en Dispositivo Movil
 
 A continuación, puedes observar cómo luce la aplicación en un dispositivo móvil:
 
 ![Vista móvil](/images/Vista-Movil.jpg)
+
 
 ## 📂 **Estructura del Proyecto**
 
