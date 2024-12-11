@@ -1,0 +1,330 @@
+/* Fondo con imágenes cambiantes cada 5 segundos */
+.bg-carousel {
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh; 
+  transition: background-image 1s ease-in-out;
+}
+
+/* Animación para cambio de fondo */
+@keyframes carouselFade {
+0% {
+  opacity: 0;
+}
+50% {
+  opacity: 1;
+}
+100% {
+  opacity: 0;
+}
+}
+
+
+/* Colores personalizados para el esquema claro y oscuro */
+@layer base {
+  :root {
+      --background: 0 0% 100%;
+      --foreground: 240 10% 3.9%;
+      --card: 0 0% 100%;
+      --card-foreground: 240 10% 3.9%;
+      --popover: 0 0% 100%;
+      --popover-foreground: 240 10% 3.9%;
+      --primary: 240 5.9% 10%;
+      --primary-foreground: 0 0% 98%;
+      --secondary: 240 4.8% 95.9%;
+      --secondary-foreground: 240 5.9% 10%;
+      --muted: 240 4.8% 95.9%;
+      --muted-foreground: 240 3.8% 46.1%;
+      --accent: 240 4.8% 95.9%;
+      --accent-foreground: 240 5.9% 10%;
+      --destructive: 0 84.2% 60.2%;
+      --destructive-foreground: 0 0% 98%;
+      --border: 240 5.9% 90%;
+      --input: 240 5.9% 90%;
+      --ring: 240 5.9% 10%;
+      --radius: 0.5rem;
+  }
+  .dark {
+      --background: 240 10% 3.9%;
+      --foreground: 0 0% 98%;
+      --card: 240 10% 3.9%;
+      --card-foreground: 0 0% 98%;
+      --popover: 240 10% 3.9%;
+      --popover-foreground: 0 0% 98%;
+      --primary: 0 0% 98%;
+      --primary-foreground: 240 5.9% 10%;
+      --secondary: 240 3.7% 15.9%;
+      --secondary-foreground: 0 0% 98%;
+      --muted: 240 3.7% 15.9%;
+      --muted-foreground: 240 5% 64.9%;
+      --accent: 240 3.7% 15.9%;
+      --accent-foreground: 0 0% 98%;
+      --destructive: 0 62.8% 30.6%;
+      --destructive-foreground: 0 0% 98%;
+      --border: 240 3.7% 15.9%;
+      --input: 240 3.7% 15.9%;
+      --ring: 240 4.9% 83.9%;
+  }
+}
+
+/* Menú móvil oculto por defecto */
+#mobile-menu {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.9);
+  z-index: 999;
+  padding-top: 60px;
+  transform: translateX(-100%);
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Mostrar menú móvil activo */
+#mobile-menu.active {
+  display: block;
+  transform: translateX(0);
+}
+
+/* Navegación del menú móvil */
+#mobile-menu nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  gap: 20px;
+}
+
+#mobile-menu a {
+  font-size: 1.5rem;
+  color: #fff;
+  text-decoration: none;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+#mobile-menu a:hover {
+  transform: translateX(10px);
+  opacity: 0.8;
+}
+
+#close-menu {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  font-size: 1.5rem;
+  color: white;
+  cursor: pointer;
+  background: none;
+  border: none;
+  z-index: 1001;
+}
+
+/* Botón del menú móvil */
+#menu-toggle {
+  font-size: 1.5rem;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+  display: block;
+}
+
+/* Encabezado fijo */
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  padding: 10px 20px;
+  background-color: #111;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* Título del encabezado */
+header h1 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  text-align: left; 
+  flex: 1;
+}
+
+
+/* Ocultar el botón del menú en pantallas grandes */
+@media (min-width: 640px) {
+  #menu-toggle {
+    display: none;
+  }
+}
+
+/* Navegación principal (pantallas grandes) */
+nav {
+  display: flex;
+  gap: 20px;
+}
+
+nav a {
+  position: relative;
+  display: inline-block;
+  padding: 8px 16px;
+  font-size: 1rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+nav a:hover {
+  color: #ff6347;
+  transform: scale(1.1);
+}
+
+nav a::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #ff6347;
+  transform: scaleX(0);
+  transform-origin: bottom right;
+  transition: transform 0.3s ease;
+}
+
+nav a:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+/* Ajuste del encabezado cuando se hace scroll */
+header.scrolled {
+  background-color: #222;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.5);
+}
+
+/* Ajuste para evitar superposición */
+body {
+  padding-top: 70px;
+}
+
+/* Responsividad */
+@media (max-width: 640px) {
+  header {
+    padding: 10px 15px;
+    background-color: #111;
+    flex-direction: row;
+  }
+
+  header h1 {
+    font-size: 1.2rem;
+    flex: 1;
+  }
+
+  body {
+    padding-top: 60px;
+  }
+
+  nav {
+    display: none; 
+  }
+}
+
+
+/* Responsividad */
+@media (max-width: 768px) {
+  .grid {
+    grid-template-columns: 1fr; 
+  }
+}
+
+
+/* Carrusel de productos */
+.carousel-container {
+  position: relative;
+  width: 100%;
+  max-width: 1400px; 
+  margin: 0 auto;
+  overflow: hidden; 
+  padding: 20px 0;
+}
+
+#product-slider {
+  display: flex;
+  gap: 20px; 
+  transition: transform 0.5s ease-in-out; 
+}
+
+.carousel-item {
+  flex: 0 0 100%; 
+  max-width: 32%;
+}
+
+.carousel-item img {
+  width: 100%;
+  height: auto; 
+  object-fit: cover;
+  border-radius: 12px; 
+  transition: transform 0.3s ease, box-shadow 0.3s ease; 
+}
+
+/* Efecto hover para imágenes */
+.carousel-item:hover img {
+  transform: scale(1.1); 
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3); /
+}
+
+/* Botones de navegación */
+button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  border: none;
+  padding: 12px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  border-radius: 50%;
+  z-index: 10;
+}
+
+button:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+#prev-product {
+  left: 10px;
+}
+
+#next-product {
+  right: 10px;
+}
+
+/* Responsividad para móviles */
+@media (max-width: 768px) {
+  #product-slider {
+    gap: 0; 
+  }
+
+  .carousel-item {
+    flex: 0 0 100%; 
+    max-width: 100%;
+  }
+}
+
+
+
+
