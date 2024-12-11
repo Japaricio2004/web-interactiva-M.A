@@ -15,7 +15,6 @@ Este proyecto es un sitio web interactivo diseñado para la **Bodega M.A.**, que
    - El menú de navegación cambia dinámicamente entre versiones móvil y escritorio.
 
 3. **Interactividad:**
-   - Botón "Ver más" para mostrar información adicional.
    - Menú móvil con un diseño moderno que se abre y cierra mediante botones interactivos.
 
 4. **Elementos visuales atractivos:**
