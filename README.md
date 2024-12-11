@@ -1,4 +1,4 @@
-# web-interactiva-M.A
+# Web-interactiva-Bodega M.A
 # Bodega M.A. - Sitio Web Interactivo
 
 Este proyecto es un sitio web interactivo diseñado para la **Bodega M.A.**, que permite a los usuarios conocer la variedad de productos que ofrece, acceder a información de contacto y disfrutar de una experiencia visual atractiva y funcional tanto en computadoras como en dispositivos móviles.
