@@ -25,5 +25,5 @@ El objetivo del sitio es ofrecer información clara, atractiva y directa sobre l
 - Efectos de hover y transiciones suaves.
   
 💡 Autor
-Desarrollado por [Tu Nombre]
+Desarrollado por [Jorge Aparicio]
 Estudiante de Ingeniería de Software | USIL
