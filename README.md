@@ -23,3 +23,7 @@ El objetivo del sitio es ofrecer información clara, atractiva y directa sobre l
 - Estética elegante en tonos oscuros con detalles en amarillo.
 - Integración de íconos con Font Awesome.
 - Efectos de hover y transiciones suaves.
+  
+💡 Autor
+Desarrollado por [Tu Nombre]
+Estudiante de Ingeniería de Software | USIL
