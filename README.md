@@ -1,50 +1,25 @@
-# 🌐 Bodega M.A. - Sitio Web Interactivo
+# 🛍️ Bodega M.A. - Sitio Web
 
-El proyecto **Bodega M.A.** es un sitio web diseñado para brindar una experiencia digital moderna y funcional, destacando los productos y servicios ofrecidos por la bodega. Con un enfoque en diseño responsivo e interactividad, este proyecto combina tecnologías modernas para garantizar un acceso eficiente y atractivo tanto en computadoras como en dispositivos móviles.
+¡Bienvenido al repositorio del sitio web de **Bodega M.A.**!  
+Este sitio fue diseñado con HTML5, Tailwind CSS y JavaScript, brindando una experiencia visual moderna, responsiva y fácil de navegar.
 
----
+## 📌 Descripción
 
-## 📋 **Descripción del Proyecto**
+**Bodega M.A.** es una tienda local ubicada en la Urbanización Santa Margarita, 26 de Octubre - Piura. Se especializa en productos de tecnología, cuidado personal, perfumes y accesorios.  
+El objetivo del sitio es ofrecer información clara, atractiva y directa sobre los productos y servicios que ofrecemos.
 
-El sitio web está estructurado para ofrecer:
-- Una navegación intuitiva con opciones claras para el usuario.
-- Un carrusel dinámico que muestra los productos destacados de la bodega.
-- Integraciones clave como Google Maps y WhatsApp para facilitar la interacción y el acceso.
+## 🧱 Tecnologías Utilizadas
 
-Este proyecto busca ser una herramienta que no solo represente visualmente a la bodega, sino que también optimice la experiencia del cliente al interactuar con los servicios.
+- HTML5
+- [Tailwind CSS](https://tailwindcss.com/)
+- JavaScript (básico para menú móvil)
+- Íconos de [Font Awesome](https://fontawesome.com/)
+- 
+## ✨ Características
 
----
-
-## 🚀 **Características Principales**
-
-1. **Carrusel interactivo:** Presenta imágenes de productos con un diseño atractivo y transiciones suaves.
-2. **Google Maps integrado:** Permite localizar la bodega fácilmente desde cualquier dispositivo.
-3. **Acceso directo a WhatsApp:** Un enlace interactivo para una comunicación directa con la bodega.
-4. **Fondos dinámicos:** Transiciones automáticas entre imágenes para enriquecer la experiencia visual.
-5. **Diseño responsivo:** Garantiza una visualización óptima en computadoras, tabletas y dispositivos móviles.
-6. **Animaciones modernas:** Interacciones suaves para botones, menú y elementos visuales.
-
----
-
-## 🛠️ Tecnologías Implementadas
-
-![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
-![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
-![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
-![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)
-![Google Maps API](https://img.shields.io/badge/Google%20Maps%20API-4285F4?style=for-the-badge&logo=googlemaps&logoColor=white)
-![WhatsApp API](https://img.shields.io/badge/WhatsApp-25D366?style=for-the-badge&logo=whatsapp&logoColor=white)
-
-
----
-
-
-## 📂 **Estructura del Proyecto**
-
-```plaintext
-.
-├── index.html       # Estructura principal del sitio web
-├── styles.css       # Estilos personalizados del sitio web
-├── script.js        # Funcionalidad e interactividad
-├── images/          # Carpeta de imágenes usadas en el proyecto
-└── README.md        # Documentación del proyecto
+- Menú de navegación moderno con animaciones.
+- Secciones informativas: inicio, sobre nosotros, novedades, opiniones de clientes.
+- Diseño totalmente responsive (adaptable a móviles, tablets y escritorio).
+- Estética elegante en tonos oscuros con detalles en amarillo.
+- Integración de íconos con Font Awesome.
+- Efectos de hover y transiciones suaves.
