@@ -1,173 +1,105 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="images/image5.jpg" type="image/jpeg">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
-    <script src="https://cdn.tailwindcss.com?plugins=forms,typography"></script>
-    <link rel="stylesheet" href="styles.css">
-    <script src="script.js" defer></script>
-  </head>
-  <body class="bg-background text-foreground dark:bg-primary-foreground dark:text-primary">
-    <header class="flex items-center p-4 bg-black text-white fixed top-0 left-0 w-full z-50">
-      <!-- Botón de menú para móviles -->
-      <button id="menu-toggle" class="sm:hidden text-white focus:outline-none mr-4">
-        <i class="fas fa-bars text-2xl"></i>
-      </button>
-      
-      <!-- Nombre de la tienda -->
-      <h1 class="text-xl sm:text-2xl font-semibold uppercase tracking-wide hover:text-accent transition-transform duration-300 transform hover:scale-105 font-serif flex-1 text-center">
-        Bodega M.A.
-      </h1>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bodega M.A. | Inicio</title>
+  <link rel="icon" href="images/image5.jpg" type="image/jpeg" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com?plugins=forms,typography"></script>
+</head>
+<body class="bg-gradient-to-b from-gray-900 to-black text-white">
+
+  <!-- Header -->
+  <header class="bg-black shadow-2xl fixed w-full z-50">
+  <div class="max-w-7xl mx-auto flex items-center justify-between px-6 py-4">
+    <h1 class="text-3xl font-serif font-bold text-yellow-400 tracking-wide hover:text-white transition-all duration-300">Bodega M.A.</h1>
     
-      <!-- Menú de navegación (para dispositivos grandes) -->
-      <nav id="menu" class="hidden sm:flex space-x-6">
-        <a href="#inicio" class="hover:underline">Inicio</a>
-        <a href="#ofrecemos" class="hover:underline">Qué Ofrecemos</a>
-        <a href="#contacto" class="hover:underline">Contacto</a>
-      </nav>
-    
-      <!-- Menú móvil (inicialmente oculto) -->
-      <div id="mobile-menu" class="absolute top-0 left-0 w-full h-full bg-black bg-opacity-75 hidden">
-        <!-- Botón de cierre del menú móvil -->
-        <button id="close-menu" class="absolute top-4 right-4 text-white text-2xl focus:outline-none">
-          <i class="fas fa-times"></i>
-        </button>
-        <nav class="flex flex-col items-center justify-center space-y-6 py-10">
-          <a href="#inicio" class="text-white text-xl hover:text-accent transition">Inicio</a>
-          <a href="#ofrecemos" class="text-white text-xl hover:text-accent transition">Qué Ofrecemos</a>
-          <a href="#contacto" class="text-white text-xl hover:text-accent transition">Contacto</a>
-        </nav>
-      </div>
-    </header>
-    <!-- Sección de Inicio con fondo rotativo -->
-    <section id="inicio" class="relative bg-carousel bg-carousel-inicio text-center py-16">
-      <!-- Capa oscura encima del fondo -->
-      <div class="absolute inset-0 bg-black opacity-50 z-10"></div>
+    <!-- Menú en escritorio -->
+    <!-- Menú en escritorio mejorado -->
+<nav class="hidden md:flex space-x-8">
+  <a href="index.html#inicio" class="relative font-semibold text-white hover:text-yellow-300 transition duration-300 group">
+    Inicio
+    <span class="absolute left-0 -bottom-1 w-0 h-0.5 bg-yellow-300 transition-all group-hover:w-full"></span>
+  </a>
+  <a href="queofrecemos.html" class="relative font-semibold text-white hover:text-yellow-300 transition duration-300 group">
+    Qué Ofrecemos
+    <span class="absolute left-0 -bottom-1 w-0 h-0.5 bg-yellow-300 transition-all group-hover:w-full"></span>
+  </a>
+  <a href="contacto.html" class="relative font-semibold text-white hover:text-yellow-300 transition duration-300 group">
+    Contacto
+    <span class="absolute left-0 -bottom-1 w-0 h-0.5 bg-yellow-300 transition-all group-hover:w-full"></span>
+  </a>
+</nav>
 
-      <!-- Contenido por encima de la capa oscura -->
-      <div class="relative z-20">
-        <h2 class="text-3xl sm:text-5xl font-extrabold text-white mb-6">
-          ¡Bienvenidos a la Bodega Maria Auxiliadora!
-        </h2>
-        <p class="text-lg sm:text-xl text-white mx-auto mb-8 max-w-3xl">
-          Nos enorgullece ofrecer productos de la más alta calidad para
-          satisfacer tus necesidades. Nos hemos convertido en un lugar de
-          confianza para nuestros clientes en Piura.
-        </p>
-        <img src="images/image1.jpg" alt="Imagen Tienda" class="mx-auto rounded-lg shadow-lg mb-8" style="max-width: 80%" />
-        <p class="text-lg sm:text-xl text-white mx-auto mb-8 max-w-3xl">
-          Ya sea que estés buscando artículos de primera necesidad o productos
-          especializados, nuestra tienda está aquí para ayudarte con un servicio
-          amable y eficiente. ¡Ven y visítanos!
-        </p>
-      </div>
-    </section>
-
-<!-- Sección Qué Ofrecemos con fondo rotativo -->
-<section id="ofrecemos" class="relative bg-carousel bg-carousel-ofrecemos text-center py-16 px-4">
-  <div class="absolute inset-0 bg-black opacity-50 z-10"></div>
-  <div class="relative z-20 max-w-screen-lg mx-auto">
-    <h2 class="text-3xl sm:text-4xl font-bold text-white mb-6">Qué Ofrecemos</h2>
-    <p class="text-lg sm:text-xl text-white mb-8 max-w-3xl mx-auto">
-      Ofrecemos una variedad de productos de alta calidad para satisfacer las necesidades de nuestros clientes.
-    </p>
-
-    <!-- Carrusel de productos -->
-    <div class="carousel-container relative overflow-hidden w-full">
-      <div id="product-slider" class="flex transition-transform duration-500 ease-in-out">
-        <!-- Carrusel de productos con clase específica -->
-        <div class="carousel-item w-full h-auto object-cover">
-          <img src="images/image4.jpg" alt="Producto 1" class="w-full h-auto rounded-lg shadow-lg">
-        </div>
-        <div class="carousel-item w-full h-auto object-cover">
-          <img src="images/image4.jpg" alt="Producto 2" class="w-full h-auto rounded-lg shadow-lg">
-        </div>
-        <div class="carousel-item w-full h-auto object-cover">
-          <img src="images/image4.jpg" alt="Producto 3" class="w-full h-auto rounded-lg shadow-lg">
-        </div>
-        <div class="carousel-item w-full h-auto object-cover">
-          <img src="images/image4.jpg" alt="Producto 4" class="w-full h-auto rounded-lg shadow-lg">
-        </div>
-        <div class="carousel-item w-full h-auto object-cover">
-          <img src="images/image4.jpg" alt="Producto 5" class="w-full h-auto rounded-lg shadow-lg">
-        </div>
-        <div class="carousel-item w-full h-auto object-cover">
-          <img src="images/image4.jpg" alt="Producto 6" class="w-full h-auto rounded-lg shadow-lg">
-        </div>
-      </div>
-
-      <!-- Botones de navegación -->
-      <button id="prev-product" class="absolute top-1/2 left-4 transform -translate-y-1/2 text-white text-2xl bg-black bg-opacity-50 p-2 rounded-full">
-        <i class="fas fa-chevron-left"></i>
-      </button>
-      <button id="next-product" class="absolute top-1/2 right-4 transform -translate-y-1/2 text-white text-2xl bg-black bg-opacity-50 p-2 rounded-full">
-        <i class="fas fa-chevron-right"></i>
-      </button>
-    </div>
-
-    <!-- Descripción más completa debajo del carrusel -->
-    <div class="mt-12 text-white text-center max-w-2xl mx-auto">
-      <p class="text-lg">
-        En <strong>Bodega M.A.</strong>, nos enorgullece ofrecer productos frescos y de alta calidad para tu hogar. 
-        Desde frutas y verduras hasta productos de uso diario, estamos aquí para satisfacer tus necesidades 
-        con un servicio amable y eficiente. ¡Visítanos y descubre la diferencia!
-      </p>
-    </div>
+    <!-- Botón hamburguesa -->
+    <button id="menu-toggle" class="md:hidden text-white text-2xl"><i class="fas fa-bars"></i></button>
   </div>
-</section>
-    
-    
 
-    <!-- Sección de Contacto con fondo rotativo -->
-    <section id="contacto" class="relative bg-carousel bg-carousel-contacto text-center py-16" >
-      <!-- Capa oscura encima del fondo -->
-      <div class="absolute inset-0 bg-black opacity-50 z-10"></div>
+  <!-- Menú móvil -->
 
-      <!-- Contenido por encima de la capa oscura -->
-      <div class="relative z-20">
-        <h2 class="text-3xl sm:text-4xl font-bold text-white mb-6">Contacto</h2>
-        <div class="max-w-4xl mx-auto space-y-8">
-          <div>
-            <h3 class="text-xl font-semibold mb-4 text-white">
-              ¿Dónde nos encontramos?
-            </h3>
-            <p class="text-lg sm:text-xl text-white mx-auto mb-8 max-w-3xl">
-              📍  Nos encontramos en Piura, en la Urbanización Santa Margarita, 26
-              de Octubre MZ Lote 7, al frente de los condominios.
-            </p>
-          </div>
-          <div class="mt-12">
-            <h3 class="text-xl font-semibold mb-4 text-white">
-              Otra manera de contactarnos
-            </h3>
-            <p class="text-lg sm:text-xl text-white mx-auto mb-8 max-w-3xl">
-              Si lo prefieres, puedes llamarnos al siguiente número o 
-              hacer clic para enviarnos un mensaje directo por WhatsApp:
-            </p>
-            <ul class="mt-4 space-y-2 text-white">
-           <li><strong>📞 WhatsApp:</strong> <a href="https://wa.link/kzhp8g" class="text-blue-400 hover:text-blue-600 text-lg sm:text-xl">Contáctanos aquí</a></li>
-           </ul>          
-          </div>
-          <div class="mt-12">
-            <h3 class="text-xl font-semibold mb-4 text-white">🗺️ Nuestra ubicación</h3>
-            <div class="w-full h-96 relative">
-              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d723.443444394632!2d-80.66483859912205!3d-5.165527994816991!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x904a1b62596bd97f%3A0xcecee96a680f9ef0!2sBodega%20Maria%20Auxiliadora.%20Agente%20BCP!5e0!3m2!1ses!2spe!4v1733755788605!5m2!1ses!2spe" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-            </div>
-          </div>
-        </div>
+<!-- Menú móvil mejorado -->
+<nav id="mobile-menu" class="md:hidden hidden px-6 pb-4 space-y-2">
+  <a href="index.html#inicio" class="block py-2 px-4 rounded-md font-medium text-white bg-gray-700 hover:bg-yellow-400 hover:text-black transition">Inicio</a>
+  <a href="queofrecemos.html" class="block py-2 px-4 rounded-md font-medium text-white bg-gray-700 hover:bg-yellow-400 hover:text-black transition">Qué Ofrecemos</a>
+  <a href="contacto.html" class="block py-2 px-4 rounded-md font-medium text-white bg-gray-700 hover:bg-yellow-400 hover:text-black transition">Contacto</a>
+</nav>
+
+</header>
+
+  <!-- Hero Section -->
+  <section id="inicio" class="pt-28 pb-20 px-6 text-center">
+    <h2 class="text-5xl font-bold text-yellow-300 drop-shadow-lg mb-4">Bienvenido a Bodega M.A.</h2>
+    <p class="text-lg text-gray-300 max-w-2xl mx-auto">Tu tienda de confianza en la Urbanización Santa Margarita, 26 de Octubre - Piura. Encuentra todo lo que necesitas en tecnología, cuidado personal y accesorios para todos los gustos.</p>
+    <img src="images/image1.jpg" alt="Bodega" class="mx-auto mt-10 rounded-2xl shadow-2xl w-full max-w-4xl transform hover:scale-105 transition duration-300" />
+  </section>
+
+  <!-- Sobre Nosotros -->
+  <section class="bg-gray-800 py-16 px-6 text-center">
+    <h3 class="text-4xl font-bold text-yellow-300 mb-4">Sobre Nosotros</h3>
+    <p class="max-w-3xl mx-auto text-gray-300 text-lg">
+      En Bodega M.A. apostamos por la innovación. Somos una tienda local que reúne productos modernos de tecnología, maquillaje, accesorios para hombres y más. Aquí encuentras desde cargadores y audífonos, hasta collares, perfumes y productos únicos para tu estilo.
+    </p>
+  </section>
+
+  <!-- Novedades -->
+  <section class="py-16 px-6 text-center">
+    <h3 class="text-4xl font-bold text-yellow-300 mb-10">🆕 Novedades en la Tienda</h3>
+    <div class="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+      <div class="bg-gray-800 rounded-xl p-6 shadow-lg hover:shadow-yellow-400/40 transition">
+        <h4 class="text-2xl font-semibold text-white mb-2">Audífonos Bluetooth</h4>
+        <p class="text-gray-300">Ideal para música, llamadas y estilo. Modelos compactos y con estuche recargable.</p>
       </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="bg-black text-white py-6">
-      <div class="container mx-auto text-center">
-        <p class="text-base md:text-lg">&copy; 2024 Bodega María Auxiliadora. Todos los derechos reservados.</p>
-        <div class="flex justify-center items-center space-x-6 mt-4">
-        </div>
+      <div class="bg-gray-800 rounded-xl p-6 shadow-lg hover:shadow-yellow-400/40 transition">
+        <h4 class="text-2xl font-semibold text-white mb-2">Perfumes & Maquillaje</h4>
+        <p class="text-gray-300">Nuevas fragancias y cosméticos de marcas peruanas y extranjeras.</p>
       </div>
-    </footer>    
-    <script src="script.js"></script>
-  </body>
+      <div class="bg-gray-800 rounded-xl p-6 shadow-lg hover:shadow-yellow-400/40 transition">
+        <h4 class="text-2xl font-semibold text-white mb-2">Cadenas & Accesorios</h4>
+        <p class="text-gray-300">Estilo urbano, casual o elegante. ¡Encuentra el accesorio ideal para ti o para regalar!</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Opiniones de Clientes -->
+  <section class="bg-gray-800 py-16 px-6 text-center">
+    <h3 class="text-4xl font-bold text-yellow-300 mb-8">🗣️ Opiniones de Clientes</h3>
+    <div class="max-w-4xl mx-auto space-y-8">
+      <div class="bg-black bg-opacity-30 p-6 rounded-xl shadow-lg">
+        <p class="italic text-gray-300">"Siempre encuentro los mejores cargadores y audífonos aquí. ¡Excelente calidad!"</p>
+        <p class="text-yellow-400 font-semibold mt-2">— Erick R., cliente habitual</p>
+      </div>
+      <div class="bg-black bg-opacity-30 p-6 rounded-xl shadow-lg">
+        <p class="italic text-gray-300">"Compré un perfume y unos aretes. Todo muy bonito y a buen precio."</p>
+        <p class="text-yellow-400 font-semibold mt-2">— Mónica G., vecina</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-black text-white text-center py-6 mt-10">
+    <p class="text-sm">&copy; 2024 Bodega María Auxiliadora. Todos los derechos reservados.</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
 </html>
