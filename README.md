@@ -11,10 +11,8 @@ El objetivo del sitio es ofrecer información clara, atractiva y directa sobre l
 ## 🧱 Tecnologías Utilizadas
 
 - HTML5
-- [Tailwind CSS](https://tailwindcss.com/)
+- Tailwind CSS
 - JavaScript (básico para menú móvil)
-- Íconos de [Font Awesome](https://fontawesome.com/)
-- 
 ## ✨ Características
 
 - Menú de navegación moderno con animaciones.
@@ -25,5 +23,5 @@ El objetivo del sitio es ofrecer información clara, atractiva y directa sobre l
 - Efectos de hover y transiciones suaves.
   
 💡 Autor
-Desarrollado por [Jorge Aparicio]
-Estudiante de Ingeniería de Software | USIL
+- Desarrollado por Jorge Aparicio
+- Estudiante de Ingeniería de Software | USIL
