@@ -6,7 +6,7 @@ Este sitio fue diseñado con HTML5, Tailwind CSS y JavaScript, brindando una exp
 ## 📌 Descripción
 
 **Bodega M.A.** es una tienda local ubicada en la Urbanización Santa Margarita, 26 de Octubre - Piura. Se especializa en productos de tecnología, cuidado personal, perfumes y accesorios.  
-El objetivo del sitio es ofrecer información clara, atractiva y directa sobre los productos y servicios que ofrecemos.
+El objetivo del sitio es ofrecer información clara, atractiva y directa sobre los productos y servicios que ofrecen.
 
 ## 🧱 Tecnologías Utilizadas
 
